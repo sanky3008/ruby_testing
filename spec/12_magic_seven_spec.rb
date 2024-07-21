@@ -70,9 +70,23 @@ describe MagicSeven do
   # Write a test for each of the following methods:
 
   describe '#subtract_four' do
+    context 'when previous step is 12' do
+      it 'returns 8' do
+        previous_step = 12
+        result = game.subtract_four(previous_step)
+        expect(result).to eq(8)
+      end
+    end
   end
 
   describe '#divide_by_two' do
+    context 'when previous step is 12' do
+      it 'returns 6' do
+        previous_step = 12
+        result = game.divide_by_two(previous_step)
+        expect(result).to eq(8)
+      end
+    end
   end
 
   # The following tests will need you to create new instances of MagicSeven with
